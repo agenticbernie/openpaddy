@@ -1,0 +1,12 @@
+{
+  "name": "@openpaddy/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "echo \"shared dev placeholder\"",
+    "build": "echo \"shared build placeholder\"",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"shared test placeholder\""
+  }
+}

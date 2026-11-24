@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "paths": {
+      "@openpaddy/shared": ["./packages/shared/src/index.ts"],
+      "@openpaddy/shared/*": ["./packages/shared/src/*"],
+      "@openpaddy/db": ["./packages/db/src/index.ts"],
+      "@openpaddy/db/*": ["./packages/db/src/*"]
+    }
+  }
+}
