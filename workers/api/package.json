@@ -4,9 +4,23 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "echo \"api dev placeholder\"",
-    "build": "echo \"api build placeholder\"",
+    "dev": "wrangler dev --port 8787",
+    "build": "tsc --noEmit",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"api test placeholder\""
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1176.0",
+    "@aws-sdk/s3-request-presigner": "^3.1176.0",
+    "@openpaddy/db": "workspace:^",
+    "@openpaddy/shared": "workspace:^",
+    "drizzle-orm": "^0.45.4",
+    "hono": "^4.13.21",
+    "jose": "^6.2.18"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261124.1",
+    "vitest": "^3.0.7",
+    "wrangler": "^4.168.0"
   }
 }

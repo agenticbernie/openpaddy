@@ -1,0 +1,20 @@
+name = "openpaddy-api"
+main = "src/index.ts"
+compatibility_date = "2025-03-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "openpaddy-db"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "../../packages/db/drizzle"
+
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "openpaddy-media"
+
+[vars]
+JWT_SECRET = "openpaddy-dev-jwt-secret-change-in-prod-2027"
+R2_BUCKET_NAME = "openpaddy-media"
+R2_ENDPOINT = "https://example.r2.cloudflarestorage.com"
+R2_REGION = "auto"
