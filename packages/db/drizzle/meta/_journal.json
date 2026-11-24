@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1795543814552,
+      "tag": "0000_green_exodus",
+      "breakpoints": true
+    }
+  ]
+}

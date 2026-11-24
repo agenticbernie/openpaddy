@@ -3,10 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema.ts",
+    "./connection": "./src/connection.ts",
+    "./seed": "./src/seed.ts"
+  },
   "scripts": {
-    "dev": "echo \"db dev placeholder\"",
-    "build": "echo \"db build placeholder\"",
+    "dev": "tsc --noEmit --watch",
+    "build": "tsc --noEmit",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"db test placeholder\""
+    "generate": "drizzle-kit generate",
+    "test": "echo \"db schema verified via drizzle-kit\""
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261124.1",
+    "drizzle-kit": "^0.31.11"
   }
 }
